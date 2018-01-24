@@ -10,15 +10,16 @@ import java.util.Map;
  */
 public class MessageType {
 
-    //扫码大战
-    public static final int COLLECT_CARD_START_GAME = 0x1001;
-    public static final int COLLECT_CARD_FIND_TREASURE_BOX = 0x1002;
+    public static final int MESSAGE_TYPE1 = 0x001;
+    public static final int MESSAGE_TYPE2 = 0x002;
+    public static final int MESSAGE_TYPE3 = 0x003;
 
     //获取所有的消息
     public static Map<Integer,String> getAllMessage(){
         Map<Integer,String> allMessage = new HashMap<>();
-        allMessage.put(COLLECT_CARD_START_GAME, "欢迎来到集卡寻宝，游戏中请注意安全");
-        allMessage.put(COLLECT_CARD_FIND_TREASURE_BOX, "恭喜你寻找到宝箱");
+        allMessage.put(MESSAGE_TYPE1, "发送消息11111111111");
+        allMessage.put(MESSAGE_TYPE2, "发送消息22222222222");
+        allMessage.put(MESSAGE_TYPE3, "发送消息33333333333");
         return allMessage;
     }
 
